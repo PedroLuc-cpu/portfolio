@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "./components/theme-provider";
+import { ModeToggle } from "./components/mode-toggle/ModeToogle";
+import Header from "./components/header";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 const inter = Roboto({weight: ["500", "700", "900"], subsets: ["latin"]});
 
@@ -24,17 +27,21 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
           >
-          <header className="bg-[#202024]">
-            <nav className="flex justify-between p-3 items-center">
-              <h1 className="text-4xl font-extrabold tracking-tight lg:text-3xl">Logo</h1>
-              <ul className="flex">
-                <li className="p-3 tracking-tight lg:text-lg hover:bg-stone-900 hover:rounded-sm hover:cursor-pointer">Home</li>
-                <li className="p-3 tracking-tight lg:text-lg hover:bg-stone-900 hover:rounded-sm hover:cursor-pointer">Projetos</li>
-                <li className="p-3 tracking-tight lg:text-lg hover:bg-stone-900 hover:rounded-sm hover:cursor-pointer">Contato</li>
-              </ul>
-            </nav>
-          </header>
-          {children}
+          <div className="grid grid-cols-4 h-[100vh]">
+            <Header/>
+          <div className="col-span-3">
+            <div className="bg-[#202024] p-4 justify-between flex">
+              <Avatar>
+                <AvatarImage src="https://github.com/pedroluc-cpu.png"/>
+                <AvatarFallback>PL</AvatarFallback>
+              </Avatar>
+              <ModeToggle/>
+            </div>
+            <div className="p-2">
+              {children}
+            </div>
+          </div>
+          </div>
         </ThemeProvider>
       </body>
     </html>
