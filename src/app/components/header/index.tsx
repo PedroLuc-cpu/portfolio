@@ -33,7 +33,7 @@ function Header() {
               flex justify-between"
               onClick={() => {
                 push('projetos')
-            }}
+              }}
               >
                 Projetos<FolderOpenDot />
               </li>
@@ -43,6 +43,9 @@ function Header() {
               hover:rounded-sm
               hover:cursor-pointer
               flex justify-between"
+              onClick={() => {
+                push('contato')
+              }}
               >
                 Contato<BookUser />
               </li>
