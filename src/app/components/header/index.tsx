@@ -2,7 +2,6 @@
 
 import { BookUser, Codesandbox, FolderOpenDot, Home } from "lucide-react";
 import { useRouter } from "next/navigation"
-import { useState } from "react";
 
 function Header() {
   const { push } = useRouter();
@@ -24,7 +23,7 @@ function Header() {
                 push('/')
               }}
               >
-                Home <Home />
+                Home<Home />
               </li>
             <li className="
               p-3 tracking-tight lg:text-lg
@@ -36,7 +35,7 @@ function Header() {
                 push('projetos')
             }}
               >
-                Projetos <FolderOpenDot />
+                Projetos<FolderOpenDot />
               </li>
             <li className="
               p-3 tracking-tight lg:text-lg
@@ -45,7 +44,7 @@ function Header() {
               hover:cursor-pointer
               flex justify-between"
               >
-                Contato <BookUser />
+                Contato<BookUser />
               </li>
           </ul>
         </nav>
