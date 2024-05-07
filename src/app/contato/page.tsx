@@ -328,7 +328,7 @@ export default function Example() {
 
       <div className="mt-6 flex items-center justify-end gap-x-3">
         <Button variant={"destructive"} type="button">Cancelar</Button>
-        <Button variant={"default"} type="submit">Salvar</Button>
+        <Button type="submit">Salvar</Button>
       </div>
     </form>
   )
