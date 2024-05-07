@@ -1,17 +1,3 @@
-/*
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/forms'),
-    ],
-  }
-  ```
-*/
 import { PhoneCall, UserCircleIcon } from "lucide-react"
 
 export default function Example() {
@@ -19,15 +5,15 @@ export default function Example() {
     <form>
       <div className="space-y-12">
         <div className="border-b border-gray-900/10 pb-12">
-          <h2 className="text-base font-semibold leading-7 text-gray-900">Profile</h2>
+          <h2 className="text-lg font-semibold leading-7 text-gray-900">Perfil</h2>
           <p className="mt-1 text-sm leading-6 text-gray-600">
-            This information will be displayed publicly so be careful what you share.
+            Essas informações serão exibidas publicamente, portanto, tome cuidado com o que você compartilha.
           </p>
 
           <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
             <div className="sm:col-span-4">
               <label htmlFor="username" className="block text-sm font-medium leading-6 text-gray-900">
-                Username
+                Usuário:
               </label>
               <div className="mt-2">
                 <div className="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md">
@@ -46,7 +32,7 @@ export default function Example() {
 
             <div className="col-span-full">
               <label htmlFor="about" className="block text-sm font-medium leading-6 text-gray-900">
-                About
+                Sobre:
               </label>
               <div className="mt-2">
                 <textarea
@@ -57,12 +43,12 @@ export default function Example() {
                   defaultValue={''}
                 />
               </div>
-              <p className="mt-3 text-sm leading-6 text-gray-600">Write a few sentences about yourself.</p>
+              <p className="mt-3 text-sm leading-6 text-gray-600">Escreva algumas frases sobre você.</p>
             </div>
 
             <div className="col-span-full">
               <label htmlFor="photo" className="block text-sm font-medium leading-6 text-gray-900">
-                Photo
+                foto
               </label>
               <div className="mt-2 flex items-center gap-x-3">
                 <UserCircleIcon className="h-12 w-12 text-gray-300" aria-hidden="true" />
@@ -70,14 +56,14 @@ export default function Example() {
                   type="button"
                   className="rounded-md bg-white px-2.5 py-1.5 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
                 >
-                  Change
+                  Alterar
                 </button>
               </div>
             </div>
 
             <div className="col-span-full">
               <label htmlFor="cover-photo" className="block text-sm font-medium leading-6 text-gray-900">
-                Cover photo
+                Foto de capa
               </label>
               <div className="mt-2 flex justify-center rounded-lg border border-dashed border-gray-900/25 px-6 py-10">
                 <div className="text-center">
@@ -87,10 +73,10 @@ export default function Example() {
                       htmlFor="file-upload"
                       className="relative cursor-pointer rounded-md bg-white font-semibold text-indigo-600 focus-within:outline-none focus-within:ring-2 focus-within:ring-indigo-600 focus-within:ring-offset-2 hover:text-indigo-500"
                     >
-                      <span>Upload a file</span>
+                      <span>Enviar um arquivo</span>
                       <input id="file-upload" name="file-upload" type="file" className="sr-only" />
                     </label>
-                    <p className="pl-1">or drag and drop</p>
+                    <p className="pl-1">ou arraste e solte</p>
                   </div>
                   <p className="text-xs leading-5 text-gray-600">PNG, JPG, GIF up to 10MB</p>
                 </div>
@@ -100,13 +86,13 @@ export default function Example() {
         </div>
 
         <div className="border-b border-gray-900/10 pb-12">
-          <h2 className="text-base font-semibold leading-7 text-gray-900">Personal Information</h2>
-          <p className="mt-1 text-sm leading-6 text-gray-600">Use a permanent address where you can receive mail.</p>
+          <h2 className="text-base font-semibold leading-7 text-gray-900">Informações pessoais</h2>
+          <p className="mt-1 text-sm leading-6 text-gray-600">Use um endereço permanente onde você possa receber correspondências.</p>
 
           <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
             <div className="sm:col-span-3">
               <label htmlFor="first-name" className="block text-sm font-medium leading-6 text-gray-900">
-                First name
+                primeiro nome
               </label>
               <div className="mt-2">
                 <input
@@ -121,7 +107,7 @@ export default function Example() {
 
             <div className="sm:col-span-3">
               <label htmlFor="last-name" className="block text-sm font-medium leading-6 text-gray-900">
-                Last name
+                sobrenome
               </label>
               <div className="mt-2">
                 <input
@@ -136,7 +122,7 @@ export default function Example() {
 
             <div className="sm:col-span-4">
               <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
-                Email address
+                E-email
               </label>
               <div className="mt-2">
                 <input
@@ -151,7 +137,7 @@ export default function Example() {
 
             <div className="sm:col-span-3">
               <label htmlFor="country" className="block text-sm font-medium leading-6 text-gray-900">
-                Country
+                País
               </label>
               <div className="mt-2">
                 <select
@@ -160,16 +146,17 @@ export default function Example() {
                   autoComplete="country-name"
                   className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:max-w-xs sm:text-sm sm:leading-6"
                 >
-                  <option>United States</option>
-                  <option>Canada</option>
-                  <option>Mexico</option>
+                  <option>Estados Unidos</option>
+                  <option>Canadá</option>
+                  <option>México</option>
+                  <option>Brasil</option>
                 </select>
               </div>
             </div>
 
             <div className="col-span-full">
               <label htmlFor="street-address" className="block text-sm font-medium leading-6 text-gray-900">
-                Street address
+                endereço da Rua
               </label>
               <div className="mt-2">
                 <input
@@ -184,7 +171,7 @@ export default function Example() {
 
             <div className="sm:col-span-2 sm:col-start-1">
               <label htmlFor="city" className="block text-sm font-medium leading-6 text-gray-900">
-                City
+                Cidade
               </label>
               <div className="mt-2">
                 <input
@@ -199,7 +186,7 @@ export default function Example() {
 
             <div className="sm:col-span-2">
               <label htmlFor="region" className="block text-sm font-medium leading-6 text-gray-900">
-                State / Province
+                Estado/Província
               </label>
               <div className="mt-2">
                 <input
@@ -214,7 +201,7 @@ export default function Example() {
 
             <div className="sm:col-span-2">
               <label htmlFor="postal-code" className="block text-sm font-medium leading-6 text-gray-900">
-                ZIP / Postal code
+                CEP / Código Postal
               </label>
               <div className="mt-2">
                 <input
@@ -230,14 +217,13 @@ export default function Example() {
         </div>
 
         <div className="border-b border-gray-900/10 pb-12">
-          <h2 className="text-base font-semibold leading-7 text-gray-900">Notifications</h2>
+          <h2 className="text-base font-semibold leading-7 text-gray-900">Notificações</h2>
           <p className="mt-1 text-sm leading-6 text-gray-600">
-            Well always let you know about important changes, but you pick what else you want to hear about.
+            Bem, sempre avisaremos sobre mudanças importantes, mas você escolhe o que mais deseja ouvir.
           </p>
-
           <div className="mt-10 space-y-10">
             <fieldset>
-              <legend className="text-sm font-semibold leading-6 text-gray-900">By Email</legend>
+              <legend className="text-sm font-semibold leading-6 text-gray-900">Por email</legend>
               <div className="mt-6 space-y-6">
                 <div className="relative flex gap-x-3">
                   <div className="flex h-6 items-center">
@@ -250,9 +236,9 @@ export default function Example() {
                   </div>
                   <div className="text-sm leading-6">
                     <label htmlFor="comments" className="font-medium text-gray-900">
-                      Comments
+                      Comentários
                     </label>
-                    <p className="text-gray-500">Get notified when someones posts a comment on a posting.</p>
+                    <p className="text-gray-500">Seja notificado quando alguém postar um comentário em uma postagem.</p>
                   </div>
                 </div>
                 <div className="relative flex gap-x-3">
@@ -266,9 +252,9 @@ export default function Example() {
                   </div>
                   <div className="text-sm leading-6">
                     <label htmlFor="candidates" className="font-medium text-gray-900">
-                      Candidates
+                      Candidatos
                     </label>
-                    <p className="text-gray-500">Get notified when a candidate applies for a job.</p>
+                    <p className="text-gray-500">Seja notificado quando um candidato se candidatar a um emprego.</p>
                   </div>
                 </div>
                 <div className="relative flex gap-x-3">
@@ -282,16 +268,16 @@ export default function Example() {
                   </div>
                   <div className="text-sm leading-6">
                     <label htmlFor="offers" className="font-medium text-gray-900">
-                      Offers
+                      Ofertas
                     </label>
-                    <p className="text-gray-500">Get notified when a candidate accepts or rejects an offer.</p>
+                    <p className="text-gray-500">Seja notificado quando um candidato aceitar ou rejeitar uma oferta.</p>
                   </div>
                 </div>
               </div>
             </fieldset>
             <fieldset>
-              <legend className="text-sm font-semibold leading-6 text-gray-900">Push Notifications</legend>
-              <p className="mt-1 text-sm leading-6 text-gray-600">These are delivered via SMS to your mobile phone.</p>
+              <legend className="text-sm font-semibold leading-6 text-gray-900">Notificações via push</legend>
+              <p className="mt-1 text-sm leading-6 text-gray-600">Estes são entregues via SMS para o seu telemóvel.</p>
               <div className="mt-6 space-y-6">
                 <div className="flex items-center gap-x-3">
                   <input
@@ -301,7 +287,7 @@ export default function Example() {
                     className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600"
                   />
                   <label htmlFor="push-everything" className="block text-sm font-medium leading-6 text-gray-900">
-                    Everything
+                    Tudo
                   </label>
                 </div>
                 <div className="flex items-center gap-x-3">
@@ -312,7 +298,7 @@ export default function Example() {
                     className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600"
                   />
                   <label htmlFor="push-email" className="block text-sm font-medium leading-6 text-gray-900">
-                    Same as email
+                    O mesmo que e-mail                  
                   </label>
                 </div>
                 <div className="flex items-center gap-x-3">
@@ -323,7 +309,7 @@ export default function Example() {
                     className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600"
                   />
                   <label htmlFor="push-nothing" className="block text-sm font-medium leading-6 text-gray-900">
-                    No push notifications
+                    Sem notificações push                  
                   </label>
                 </div>
               </div>
@@ -334,13 +320,13 @@ export default function Example() {
 
       <div className="mt-6 flex items-center justify-end gap-x-6">
         <button type="button" className="text-sm font-semibold leading-6 text-gray-900">
-          Cancel
+          Cancelar
         </button>
         <button
           type="submit"
           className="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
         >
-          Save
+          Salvar
         </button>
       </div>
     </form>

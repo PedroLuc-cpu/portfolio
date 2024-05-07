@@ -30,7 +30,7 @@ export default function RootLayout({
           <div className="grid grid-cols-4 h-[100vh]">
             <Header/>
           <div className="col-span-3">
-            <div className="bg-[#202024] p-4 justify-b flex">
+            <div className="dark:bg-[#202024] p-4 justify-between flex border-b border-gray-900/10">
               <Avatar>
                 <AvatarImage src="https://github.com/pedroluc-cpu.png"/>
                 <AvatarFallback>PL</AvatarFallback>
