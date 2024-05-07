@@ -6,7 +6,7 @@ export default function Example() {
   return (
     <form>
       <div className="space-y-12">
-        <Box className="m-2 p-3 border border-white/10  bg-zinc-800 rounded-md">
+        <Box className="m-2 p-3 border border-white/10  dark:bg-zinc-900 bg-gray-50 shadow-sm rounded-md">
           <div className="border-b border-gray-900/10 dark:border-gray-300/20 pb-12">
           <h2 className="text-lg font-semibold leading-7 text-gray-900 dark:text-gray-100">Perfil</h2>
           <p className="mt-1 text-sm leading-6 text-gray-600 dark:text-gray-100">
@@ -19,7 +19,7 @@ export default function Example() {
                 Usuário:
               </label>
               <div className="mt-2">
-                <div className="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md">
+                <div className="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300/30 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md">
                   <span className="flex select-none items-center pl-3 text-gray-500 sm:text-sm dark:text-gray-100">workcation.com/</span>
                   <input
                     type="text"
@@ -42,14 +42,14 @@ export default function Example() {
                   id="about"
                   name="about"
                   rows={3}
-                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 dark:text-gray-100"
+                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300/30 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 dark:text-gray-100"
                   defaultValue={''}
                 />
               </div>
               <p className="mt-3 text-sm leading-6 text-gray-600 dark:text-gray-100">Escreva algumas frases sobre você.</p>
             </div>
 
-            <Box className="m-2 p-3 border border-white/10  bg-zinc-900 rounded-md col-span-full">
+            <Box className="m-2 p-3 border border-white/10  dark:bg-zinc-900 bg-gray-50 shadow-sm rounded-md col-span-full">
               {/* <label htmlFor="photo" className="block text-sm font-medium leading-6 text-gray-900 dark:text-gray-100">
                 foto:
               </label> */}
@@ -57,7 +57,7 @@ export default function Example() {
                 <UserCircleIcon className=" text-gray-300" aria-hidden="true" size={78}/>
                 <button
                   type="button"
-                  className="rounded-md bg-white px-2.5 py-1.5 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
+                  className="rounded-md bg-white px-2.5 py-1.5 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300/30 hover:bg-gray-50"
                 >
                   Alterar
                 </button>
@@ -89,7 +89,7 @@ export default function Example() {
         </div>
         </Box>
 
-        <Box className="m-2 p-3 border border-white/10  bg-zinc-800 rounded-md">
+        <Box className="m-2 p-3 border border-white/10  dark:bg-zinc-900 bg-gray-50 shadow-sm rounded-md">
           <div className="border-b border-gray-900/10 dark:border-gray-300/20 pb-12">
           <h2 className="text-base font-semibold leading-7 text-gray-900 dark:text-gray-100">Informações pessoais</h2>
           <p className="mt-1 text-sm leading-6 text-gray-600 dark:text-gray-100">Use um endereço permanente onde você possa receber correspondências.</p>
@@ -105,7 +105,7 @@ export default function Example() {
                   name="first-name"
                   id="first-name"
                   autoComplete="given-name"
-                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 dark:text-gray-100"
+                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300/30 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 dark:text-gray-100"
                 />
               </div>
             </div>
@@ -120,7 +120,7 @@ export default function Example() {
                   name="last-name"
                   id="last-name"
                   autoComplete="family-name"
-                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 dark:text-gray-100"
+                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300/30 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 dark:text-gray-100"
                 />
               </div>
             </div>
@@ -135,7 +135,7 @@ export default function Example() {
                   name="email"
                   type="email"
                   autoComplete="email"
-                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 dark:text-gray-100"
+                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300/30 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 dark:text-gray-100"
                 />
               </div>
             </div>
@@ -149,7 +149,7 @@ export default function Example() {
                   id="country"
                   name="country"
                   autoComplete="country-name"
-                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:max-w-xs sm:text-sm sm:leading-6 dark:text-gray-100"
+                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300/30 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:max-w-xs sm:text-sm sm:leading-6 dark:text-gray-100"
                 >
                   <option>Estados Unidos</option>
                   <option>Canadá</option>
@@ -169,7 +169,7 @@ export default function Example() {
                   name="street-address"
                   id="street-address"
                   autoComplete="street-address"
-                  className="block w-full dark:text-gray-100 rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                  className="block w-full dark:text-gray-100 rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300/30 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 />
               </div>
             </div>
@@ -184,7 +184,7 @@ export default function Example() {
                   name="city"
                   id="city"
                   autoComplete="address-level2"
-                  className="block w-full rounded-md border-0 py-1.5 dark:text-gray-100 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                  className="block w-full rounded-md border-0 py-1.5 dark:text-gray-100 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300/30 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 />
               </div>
             </div>
@@ -199,7 +199,7 @@ export default function Example() {
                   name="region"
                   id="region"
                   autoComplete="address-level1"
-                  className="block w-full rounded-md border-0 py-1.5 dark:text-gray-100 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                  className="block w-full rounded-md border-0 py-1.5 dark:text-gray-100 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300/30 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 />
               </div>
             </div>
@@ -214,7 +214,7 @@ export default function Example() {
                   name="postal-code"
                   id="postal-code"
                   autoComplete="postal-code"
-                  className="block w-full rounded-md border-0 py-1.5 dark:text-gray-100 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                  className="block w-full rounded-md border-0 py-1.5 dark:text-gray-100 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300/30 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 />
               </div>
             </div>
@@ -222,7 +222,7 @@ export default function Example() {
         </div>
         </Box>
 
-        <Box className="m-2 p-3 border border-white/10  bg-zinc-800 rounded-md">
+        <Box className="m-2 p-3 border border-white/10  dark:bg-zinc-900 bg-gray-50 shadow-sm rounded-md">
           <div className="border-b border-gray-900/10 dark:border-gray-300/20 pb-12">
           <h2 className="text-base font-semibold leading-7 text-gray-900 dark:text-gray-100">Notificações</h2>
           <p className="mt-1 text-sm leading-6 text-gray-600 dark:text-gray-100">
