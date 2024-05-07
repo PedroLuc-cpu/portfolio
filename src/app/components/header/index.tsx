@@ -23,6 +23,8 @@ function Header() {
               flex justify-between 
               hover:text-white          
               group-hover:text-white
+              border-b border-gray-900/10 dark:border-gray-100/10
+            
               `} 
               onClick={() => {
                 push('/')
@@ -40,6 +42,7 @@ function Header() {
               flex justify-between
               hover:text-white
               group-hover:text-white
+              border-b border-gray-900/10 dark:border-gray-100/10
               "
               onClick={() => {
                 push('projetos')
@@ -57,6 +60,7 @@ function Header() {
               dark:text-gray-100
               hover:text-white
               group-hover:text-white
+              border-b border-gray-900/10 dark:border-gray-100/10
               "
               onClick={() => {
                 push('contato')

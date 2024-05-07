@@ -1,11 +1,13 @@
 import { Button } from "@/components/ui/button"
 import { PhoneCall, UserCircleIcon } from "lucide-react"
+import { Box } from "../components/box/Box"
 
 export default function Example() {
   return (
     <form>
       <div className="space-y-12">
-        <div className="border-b border-gray-900/10 dark:border-gray-300/20 pb-12">
+        <Box className="m-2 p-3 border border-white/10  bg-zinc-800 rounded-md">
+          <div className="border-b border-gray-900/10 dark:border-gray-300/20 pb-12">
           <h2 className="text-lg font-semibold leading-7 text-gray-900 dark:text-gray-100">Perfil</h2>
           <p className="mt-1 text-sm leading-6 text-gray-600 dark:text-gray-100">
             Essas informações serão exibidas publicamente, portanto, tome cuidado com o que você compartilha.
@@ -47,12 +49,12 @@ export default function Example() {
               <p className="mt-3 text-sm leading-6 text-gray-600 dark:text-gray-100">Escreva algumas frases sobre você.</p>
             </div>
 
-            <div className="col-span-full">
-              <label htmlFor="photo" className="block text-sm font-medium leading-6 text-gray-900 dark:text-gray-100">
-                foto
-              </label>
+            <Box className="m-2 p-3 border border-white/10  bg-zinc-900 rounded-md col-span-full">
+              {/* <label htmlFor="photo" className="block text-sm font-medium leading-6 text-gray-900 dark:text-gray-100">
+                foto:
+              </label> */}
               <div className="mt-2 flex items-center gap-x-3">
-                <UserCircleIcon className="h-12 w-12 text-gray-300" aria-hidden="true" />
+                <UserCircleIcon className=" text-gray-300" aria-hidden="true" size={78}/>
                 <button
                   type="button"
                   className="rounded-md bg-white px-2.5 py-1.5 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
@@ -60,7 +62,7 @@ export default function Example() {
                   Alterar
                 </button>
               </div>
-            </div>
+            </Box>
 
             <div className="col-span-full">
               <label htmlFor="cover-photo" className="block text-sm font-medium leading-6 text-gray-900 dark:text-gray-100">
@@ -85,8 +87,10 @@ export default function Example() {
             </div>
           </div>
         </div>
+        </Box>
 
-        <div className="border-b border-gray-900/10 dark:border-gray-300/20 pb-12">
+        <Box className="m-2 p-3 border border-white/10  bg-zinc-800 rounded-md">
+          <div className="border-b border-gray-900/10 dark:border-gray-300/20 pb-12">
           <h2 className="text-base font-semibold leading-7 text-gray-900 dark:text-gray-100">Informações pessoais</h2>
           <p className="mt-1 text-sm leading-6 text-gray-600 dark:text-gray-100">Use um endereço permanente onde você possa receber correspondências.</p>
 
@@ -216,8 +220,10 @@ export default function Example() {
             </div>
           </div>
         </div>
+        </Box>
 
-        <div className="border-b border-gray-900/10 dark:border-gray-300/20 pb-12">
+        <Box className="m-2 p-3 border border-white/10  bg-zinc-800 rounded-md">
+          <div className="border-b border-gray-900/10 dark:border-gray-300/20 pb-12">
           <h2 className="text-base font-semibold leading-7 text-gray-900 dark:text-gray-100">Notificações</h2>
           <p className="mt-1 text-sm leading-6 text-gray-600 dark:text-gray-100">
             Bem, sempre avisaremos sobre mudanças importantes, mas você escolhe o que mais deseja ouvir.
@@ -317,6 +323,7 @@ export default function Example() {
             </fieldset>
           </div>
         </div>
+        </Box>
       </div>
 
       <div className="mt-6 flex items-center justify-end gap-x-3">

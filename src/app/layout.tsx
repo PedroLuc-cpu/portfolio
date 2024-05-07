@@ -5,6 +5,8 @@ import { ThemeProvider } from "./components/theme-provider";
 import { ModeToggle } from "./components/mode-toggle/ModeToogle";
 import Header from "./components/header";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Toast, ToastProvider } from "@/components/ui/toast";
+import { Toaster } from "@/components/ui/toaster";
 
 const inter = Roboto({weight: ["500", "700", "900"], subsets: ["latin"]});
 
@@ -30,15 +32,18 @@ export default function RootLayout({
           <div className="grid grid-cols-4 h-[100vh]">
             <Header/>
           <div className="col-span-3">
-            <div className="dark:bg-[#202024] p-4 justify-between flex border-b border-gray-900/10">
+            <div className="dark:bg-[#202024] p-4 justify-between flex border-b border-gray-900/10 dark:border-gray-100/20">
               <Avatar>
                 <AvatarImage src="https://github.com/pedroluc-cpu.png"/>
                 <AvatarFallback>PL</AvatarFallback>
               </Avatar>
               <ModeToggle/>
             </div>
-            <div className="p-2">
-              {children}
+            <div className="container mx-auto px-4 box-border">
+              <ToastProvider>
+                <Toaster/>
+                {children}
+              </ToastProvider>
             </div>
           </div>
           </div>

@@ -1,5 +1,4 @@
 "use client"
-import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 
 export default function Home() {
@@ -36,22 +35,16 @@ export default function Home() {
 
     return (
       <div className="grid grid-cols-2" ref={container}>
-        <div>
-          <h1 className={`${isEndOfPage ? "text-red-600" : "text-gray-200"} flex justify-center items-centertext-4xl font-extrabold tracking-tight lg:text-5xl`}>
-          <mark >Pedro Lucas Santos</mark>
+        {/* <div>
+          <h1 className={`flex justify-center items-centertext-4xl font-extrabold tracking-tight lg:text-5xl`}>
+          Pedro Lucas Santos
         </h1>
         </div>
         <div>
           <span>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni aperiam ex molestias velit est? Reiciendis accusantium voluptatibus adipisci, consequuntur architecto perspiciatis nihil quibusdam optio enim, nemo exercitationem iste consequatur. Sapiente!
           </span>
-          <Image
-            src={"/blackandwhite.jpg"}
-            width={500}
-            height={500}
-            alt="blackandwhite.jpg"
-          />
-        </div>
+        </div> */}
       </div>
   );
 }
