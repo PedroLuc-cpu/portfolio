@@ -6,7 +6,6 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import AlertDialogOpenging from "../alertDialog/AlertDialog";
 
 interface CardOpengingProps {
   title?: string;
@@ -21,7 +20,6 @@ export default function CardOpenging({title, description, content, footer}: Card
       <CardHeader>
         <CardTitle className="flex items-center justify-between">
           {title}
-          <AlertDialogOpenging />
         </CardTitle>
         <CardDescription>{description}</CardDescription>
       </CardHeader>

@@ -29,7 +29,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
           >
-          <div className="grid grid-cols-4 h-[100vh]">
+          <div className="grid grid-cols-4 h-[100vh] w-[100wv]">
             <Header/>
           <div className="col-span-3">
             <div className="dark:bg-[#202024] p-4 justify-between flex border-b border-gray-900/10 dark:border-gray-100/20">
@@ -39,12 +39,14 @@ export default function RootLayout({
               </Avatar>
               <ModeToggle/>
             </div>
-            <div className="container mx-auto px-4 box-border">
+            <main>
+              <div className="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
               <ToastProvider>
                 <Toaster/>
                 {children}
               </ToastProvider>
             </div>
+            </main>
           </div>
           </div>
         </ThemeProvider>
