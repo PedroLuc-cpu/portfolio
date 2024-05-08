@@ -54,6 +54,9 @@ export default async function Projetos() {
               </CardHeader>
             <CardContent>
                 <CardDescription>{repository.description}</CardDescription>
+                <Box className="bg-zinc-900 p-4 mt-2 rounded-md">
+                  <CardDescription>git clone {repository.clone_url}</CardDescription>
+                </Box>
             </CardContent>
             <CardFooter className="flex justify-between">
               <Box>
