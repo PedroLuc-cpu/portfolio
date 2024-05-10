@@ -10,6 +10,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { formatDate } from "../utils/formatDate";
+import CopyOrPaste from "../components/copy-or-paste/CopyOrPaste";
 
 
 interface CardDataOpen {
@@ -54,8 +55,8 @@ export default async function Projetos() {
               </CardHeader>
             <CardContent>
                 <CardDescription>{repository.description}</CardDescription>
-                <Box className="bg-zinc-900 p-4 mt-2 rounded-md">
-                  <CardDescription>git clone {repository.clone_url}</CardDescription>
+                <Box className="darbg-zinc-900 bg-slate-50 p-4 mt-2 rounded-md border dark:border-gray-200/20 border-gray-400/50">
+                  <CopyOrPaste prefix="git clone" valueP={repository.clone_url}/>
                 </Box>
             </CardContent>
             <CardFooter className="flex justify-between">
