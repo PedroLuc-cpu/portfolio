@@ -40,7 +40,7 @@ export default function RootLayout({
               <ModeToggle/>
             </div>
             <main>
-              <div className="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
+              <div className="mx-auto max-w-7xl py-1 sm:px-6 lg:px-1">
               <ToastProvider>
                 <Toaster/>
                 {children}

@@ -55,7 +55,7 @@ export default async function Projetos() {
               </CardHeader>
             <CardContent>
                 <CardDescription>{repository.description}</CardDescription>
-                <Box className="darbg-zinc-900 bg-slate-50 p-4 mt-2 rounded-md border dark:border-gray-200/20 border-gray-400/50">
+                <Box className="dark:bg-zinc-900 bg-slate-50 p-4 mt-2 rounded-md border dark:border-gray-200/20 border-gray-400/50">
                   <CopyOrPaste prefix="git clone" valueP={repository.clone_url}/>
                 </Box>
             </CardContent>
